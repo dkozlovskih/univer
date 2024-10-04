@@ -10,5 +10,4 @@ while i < len(my_list):
         continue
     elif my_list[i] < 0:
         i = i + 1
-        continue
     break
