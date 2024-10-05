@@ -6,8 +6,6 @@ def get_matrix(n, m, val):
         matrix.append([])
         for j in range(m):
             matrix[i].append(val)
-        #    for f in range():
-          #      matrix[j].append(val)
             break
     return (matrix)
 
