@@ -5,7 +5,7 @@ def get_matrix(n, m, val):
         matrix.append([])
         for j in range(m):
             matrix[i].append(val)
-            break
+            
     return (matrix)
 
 
