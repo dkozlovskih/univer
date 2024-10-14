@@ -6,7 +6,6 @@ def count_calls():
 
 def string_info(str):
     count_calls()
-#    str = input('введите строку:')
     str0 = len(str)
     str1 = str.lower()
     str2 = str.upper()
