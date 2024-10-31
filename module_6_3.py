@@ -18,14 +18,14 @@ class Pegasus(Horse, Eagle):            # - класс описывающий п
                            #Объект такого класса должен обладать атрибутами классов родителей в порядке наследования.
 #Также обладает методами:
     def move(self, dx, dy):       # - где dx и dy изменения дистанции. В этом методе должны запускаться наследованные методы run и fly соответственно.
-        super().run(dx)
-        super().fly(dy)
+        Horse.run(self, dx)
+        Eagle.fly(self, dy)
 
     def get_pos(self):            # возвращает текущее положение пегаса в виде кортежа - (x_distance, y_distance) в том же порядке.
         return (self.x_distance, self.y_distance)
 
     def voice(self):                    # - который печатает значение унаследованного атрибута sound.
-        print(self.sound)
+        print(Eagle.sound)
 
 
 p1 = Pegasus()
